@@ -1,0 +1,3 @@
+# Lokale Daten nie einchecken
+data/*.sqlite
+data/*.sqlite-*

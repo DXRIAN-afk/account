@@ -1,0 +1,14 @@
+# DXR Pass
+DirectoryIndex index.php
+Options -Indexes
+
+<IfModule mod_mime.c>
+  AddType font/woff2 .woff2
+</IfModule>
+
+# Authorization-Header an PHP weitergeben (für userinfo.php)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP:Authorization} .
+  RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>

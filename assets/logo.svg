@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>DXR Pass</title>
+  <rect width="512" height="512" rx="116" fill="#1F2023"/>
+  <rect x="196" y="190" width="214" height="150" rx="34" fill="none" stroke="#E8781F" stroke-width="18"/>
+  <rect x="96" y="146" width="236" height="162" rx="38" fill="#E8781F"/>
+  <circle cx="170" cy="210" r="30" fill="#1F2023"/>
+  <path d="M124 278 a46 40 0 0 1 92 0 Z" fill="#1F2023"/>
+  <rect x="236" y="196" width="66" height="16" rx="8" fill="#1F2023"/>
+  <rect x="236" y="232" width="48" height="16" rx="8" fill="#1F2023" opacity=".7"/>
+</svg>
