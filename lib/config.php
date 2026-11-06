@@ -28,7 +28,7 @@ return [
     // Administrator: meldet sich mit diesem Benutzernamen und dem Passwort
     // aus lib/config.local.php an. Das Konto wird beim ersten Mal angelegt.
     'admin' => [
-        'username' => 'Elix',
+        'username' => 'Admin',
         'password' => '',
     ],
 

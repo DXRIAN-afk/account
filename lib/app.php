@@ -401,6 +401,8 @@ function public_profile(array $u): array
         'created_at'   => (int) $u['created_at'],
         'locked'       => !empty($u['locked_at']),
         'lock_reason'  => !empty($u['locked_at']) ? (string) ($u['lock_reason'] ?? '') : '',
+        // Administrator von dartx account – die Apps machen ihn auch bei sich zum Administrator
+        'is_admin'     => !empty($u['is_admin']),
     ];
 }
 

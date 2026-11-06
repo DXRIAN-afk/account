@@ -4,7 +4,7 @@
  *
  * Hier das Admin-Passwort eintragen (zwischen die Anführungszeichen) und die
  * Datei zusammen mit dem Rest per FTP hochladen. Der Benutzername ist in
- * config.php festgelegt (Standard: Elix).
+ * config.php festgelegt (Standard: Admin).
  *
  * Leere Werte werden ignoriert.
  */
