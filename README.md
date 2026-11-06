@@ -19,8 +19,10 @@ Hexa Chat, SchoolWeb Browser, PC95 und der Schul-App mit **«Mit dartx account a
    auch die versteckten Dateien `.htaccess` (im Hauptordner, in `lib/` und in `data/`).
 2. Der Ordner `data/` muss für PHP beschreibbar sein (FTP-Rechte `755`, falls nötig `775`).
 3. In `lib/config.local.php` das **Admin-Passwort** eintragen und hochladen.
-4. `https://account.da-rtx.ch` öffnen und dich mit **Elix** und diesem Passwort anmelden –
+4. `https://account.da-rtx.ch` öffnen und dich mit **Admin** und diesem Passwort anmelden –
    das Admin-Konto wird beim ersten Mal angelegt. Unter «Administration» siehst du alle Konten.
+   Mit diesem Konto bist du über «Mit dartx account anmelden» auch in den Apps der Administrator
+   (zurzeit Hexa Chat).
 
 Die Datenbank (SQLite) entsteht automatisch. Für MySQL in `lib/config.php` `'driver' => 'mysql'` setzen.
 
