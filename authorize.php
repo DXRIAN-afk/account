@@ -1,6 +1,6 @@
 <?php
 /**
- * DXR Pass – Anmeldung für eine App («Mit DXR Pass anmelden»)
+ * dartx account – Anmeldung für eine App («Mit dartx account anmelden»)
  *
  * Die App leitet hierher weiter mit:
  *   response_type=code, client_id, redirect_uri, state,

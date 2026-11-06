@@ -1,6 +1,6 @@
 <?php
 /**
- * DXR Pass – Konfiguration
+ * dartx account – Konfiguration
  *
  * Standard: SQLite (keine Einrichtung nötig, die Datenbank-Datei wird
  * automatisch im Ordner /data angelegt). Für MySQL 'driver' => 'mysql'
@@ -9,8 +9,8 @@
  * Das Admin-Passwort gehört in lib/config.local.php (nicht hier).
  */
 return [
-    // Name des Kontos, wie er überall angezeigt wird («Mit DXR Pass anmelden»)
-    'name' => 'DXR Pass',
+    // Name des Kontos, wie er überall angezeigt wird («Mit dartx account anmelden»)
+    'name' => 'dartx account',
 
     'driver' => 'sqlite', // 'sqlite' oder 'mysql'
     'sqlite_path' => __DIR__ . '/../data/konto.sqlite',

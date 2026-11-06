@@ -1,6 +1,6 @@
 <?php
 /**
- * DXR Pass – Seiten: Anmelden, Registrieren, Konto, Administration
+ * dartx account – Seiten: Anmelden, Registrieren, Konto, Administration
  * Aufruf: index.php?p=<seite>
  */
 require __DIR__ . '/lib/app.php';
@@ -252,7 +252,7 @@ if (!$me || $page === 'login' || $page === 'register') {
     if ($isReg) {
         render_page('Konto erstellen', '<div class="card narrow">
           <h1>Konto erstellen</h1>
-          <p class="muted">Ein Konto für alle Apps von da-rtx.ch.</p>' . $targetHint . $errorHtml . '
+          <p class="muted">Ein Konto für alle Apps von <span class="nowrap">da-rtx.ch</span>.</p>' . $targetHint . $errorHtml . '
           <form method="post" class="form" autocomplete="on">' . csrf_field() . $contField . '
             <input type="hidden" name="action" value="register">
             <label class="field"><span>Benutzername</span>
@@ -274,7 +274,7 @@ if (!$me || $page === 'login' || $page === 'register') {
     } else {
         render_page('Anmelden', '<div class="card narrow">
           <h1>Anmelden</h1>
-          <p class="muted">Mit deinem ' . $name . ' bei allen Apps von da-rtx.ch.</p>' . $targetHint . $errorHtml . '
+          <p class="muted">Mit deinem ' . $name . ' bei allen Apps von <span class="nowrap">da-rtx.ch</span>.</p>' . $targetHint . $errorHtml . '
           <form method="post" class="form" autocomplete="on">' . csrf_field() . $contField . '
             <input type="hidden" name="action" value="login">
             <label class="field"><span>Benutzername</span>
