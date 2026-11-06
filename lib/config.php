@@ -66,7 +66,7 @@ return [
             'name'          => 'Schul-App',
             'description'   => 'Hausaufgaben, Prüfungen und Noten',
             'url'           => 'https://schul-app.da-rtx.ch/',
-            'redirect_uris' => [],
+            'redirect_uris' => ['https://schul-app.da-rtx.ch/sso.php'],
         ],
     ],
 ];

@@ -39,8 +39,8 @@ wenn ihre genaue Rücksprung-Adresse unter `redirect_uris` steht:
 ],
 ```
 
-Hexa Chat ist bereits angebunden. SchoolWeb Browser, PC95 und Schul-App sind eingetragen,
-aber noch ohne Rücksprung-Adresse – sie folgen.
+Hexa Chat und die Schul-App (`https://schul-app.da-rtx.ch/sso.php`) sind bereits angebunden.
+SchoolWeb Browser und PC95 sind eingetragen, aber noch ohne Rücksprung-Adresse – sie folgen.
 
 ### Ablauf für Entwickler (OAuth 2 Authorization Code mit PKCE)
 
