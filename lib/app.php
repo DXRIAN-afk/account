@@ -1,12 +1,12 @@
 <?php
 /**
- * DXR Pass – gemeinsamer Programmcode
+ * dartx account – gemeinsamer Programmcode
  *
  * Ein Konto für alle Apps unter da-rtx.ch. Die Apps melden ihre Benutzer
  * nach dem Prinzip «Mit Google anmelden» an (OAuth 2 Authorization Code
  * mit PKCE): Die App schickt den Browser hierher, der Benutzer meldet sich
  * an, und die App erhält einen einmaligen Code, den sie gegen die
- * Benutzerdaten eintauscht. Passwörter sieht nur DXR Pass.
+ * Benutzerdaten eintauscht. Passwörter sieht nur dartx account.
  */
 
 const SESSION_COOKIE = 'dxrpass';

@@ -1,6 +1,6 @@
 <?php
 /**
- * DXR Pass – Benutzerdaten und Status abfragen
+ * dartx account – Benutzerdaten und Status abfragen
  *
  * GET mit Header «Authorization: Bearer <access_token>»
  * Antwort: { sub, username, display_name, created_at, locked, lock_reason }

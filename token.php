@@ -1,6 +1,6 @@
 <?php
 /**
- * DXR Pass – Code gegen Zugangsschlüssel und Benutzerdaten eintauschen
+ * dartx account – Code gegen Zugangsschlüssel und Benutzerdaten eintauschen
  *
  * POST grant_type=authorization_code, code, redirect_uri, client_id, code_verifier
  * Antwort: { access_token, token_type: "Bearer", user: { sub, username, display_name, … } }

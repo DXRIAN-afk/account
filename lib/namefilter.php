@@ -1,6 +1,6 @@
 <?php
 /**
- * DXR Pass – Filter für anstössige Namen (gleiche Liste wie Hexa Chat)
+ * dartx account – Filter für anstössige Namen (gleiche Liste wie Hexa Chat)
  *
  * Prüft Anzeigenamen, gespeicherte Kontaktnamen und Gruppennamen auf
  * beleidigende, sexuelle oder rassistische Begriffe – auch in getarnter

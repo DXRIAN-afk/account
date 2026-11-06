@@ -1,4 +1,4 @@
-/* DXR Pass – Design (passend zu Hexa: Orange auf Dunkelgrau, weich gerundet) */
+/* dartx account – Design (passend zu Hexa: Orange auf Dunkelgrau, weich gerundet) */
 @font-face { font-family: 'Fredoka'; font-style: normal; font-weight: 300 700; font-display: swap; src: url(fonts/fredoka-latin.woff2) format('woff2'); }
 
 :root {
@@ -120,3 +120,4 @@ details[open] summary { margin-bottom: 14px; }
 .prose p, .prose li { color: color-mix(in srgb, var(--text) 85%, var(--muted)); }
 .foot { text-align: center; font-size: 13px; }
 .foot a { color: var(--muted); }
+.nowrap { white-space: nowrap; }

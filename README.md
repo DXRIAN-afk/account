@@ -1,13 +1,13 @@
-# DXR Pass
+# dartx account
 
 Ein Konto für alle Apps unter **da-rtx.ch** – wie «Mit Google anmelden».
 Man registriert sich einmal unter `konto.da-rtx.ch` und meldet sich danach bei
-Hexa Chat, SchoolWeb Browser, PC95 und der Schul-App mit **«Mit DXR Pass anmelden»** an.
+Hexa Chat, SchoolWeb Browser, PC95 und der Schul-App mit **«Mit dartx account anmelden»** an.
 
 ## Funktionen
 
 - **Registrieren und Anmelden** mit Benutzername und Passwort (sicher gehasht)
-- **Einmal anmelden genügt:** Wer bei DXR Pass angemeldet ist, kommt in jede App mit einem Klick
+- **Einmal anmelden genügt:** Wer bei dartx account angemeldet ist, kommt in jede App mit einem Klick
 - **Mein Konto:** Anzeigename, Passwort ändern, verbundene Apps sehen und den Zugriff entfernen, Konto löschen
 - **Administration:** alle Konten, Suche, Sperren (mit Grund), Entsperren, Löschen – eine Sperre gilt in **allen** Apps
 - **Namensfilter:** beleidigende Namen werden automatisch durch «User» + 6 Ziffern ersetzt
@@ -45,7 +45,7 @@ aber noch ohne Rücksprung-Adresse – sie folgen.
 1. Die App erzeugt einen zufälligen `code_verifier` und leitet den Browser weiter zu
    `https://konto.da-rtx.ch/authorize.php?response_type=code&client_id=…&redirect_uri=…&state=…&code_challenge=…&code_challenge_method=S256`
    (`code_challenge` = Base64url von SHA-256 des `code_verifier`).
-2. DXR Pass meldet den Benutzer an und leitet zurück zu `redirect_uri?code=…&state=…`.
+2. dartx account meldet den Benutzer an und leitet zurück zu `redirect_uri?code=…&state=…`.
 3. Die App tauscht den Code ein: `POST https://konto.da-rtx.ch/token.php` mit
    `grant_type=authorization_code`, `code`, `redirect_uri`, `client_id`, `code_verifier`.
    Antwort: `{ "access_token": "…", "token_type": "Bearer", "user": { "sub", "username", "display_name", "locked", … } }`
@@ -60,7 +60,7 @@ Geheime Schlüssel sind nicht nötig; Sicherheit entsteht durch PKCE und die fes
 
 ```
 index.php           Anmelden, Registrieren, Mein Konto, Administration, Nutzungsbedingungen
-authorize.php       «Mit DXR Pass anmelden» – Bestätigung und Rücksprung zur App
+authorize.php       «Mit dartx account anmelden» – Bestätigung und Rücksprung zur App
 token.php           Code gegen Zugangsschlüssel und Benutzerdaten eintauschen
 userinfo.php        Benutzerdaten und Status (aktiv / gesperrt) abfragen
 lib/                Programmcode und Einstellungen (für Besucher gesperrt)
