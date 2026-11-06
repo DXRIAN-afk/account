@@ -1,7 +1,7 @@
 # dartx account
 
 Ein Konto für alle Apps unter **da-rtx.ch** – wie «Mit Google anmelden».
-Man registriert sich einmal unter `konto.da-rtx.ch` und meldet sich danach bei
+Man registriert sich einmal unter `account.da-rtx.ch` und meldet sich danach bei
 Hexa Chat, SchoolWeb Browser, PC95 und der Schul-App mit **«Mit dartx account anmelden»** an.
 
 ## Funktionen
@@ -15,11 +15,11 @@ Hexa Chat, SchoolWeb Browser, PC95 und der Schul-App mit **«Mit dartx account a
 
 ## Installation per FTP
 
-1. Den **Inhalt** dieses Repositorys in den Ordner der Subdomain `konto.da-rtx.ch` hochladen,
+1. Den **Inhalt** dieses Repositorys in den Ordner der Subdomain `account.da-rtx.ch` hochladen,
    auch die versteckten Dateien `.htaccess` (im Hauptordner, in `lib/` und in `data/`).
 2. Der Ordner `data/` muss für PHP beschreibbar sein (FTP-Rechte `755`, falls nötig `775`).
 3. In `lib/config.local.php` das **Admin-Passwort** eintragen und hochladen.
-4. `https://konto.da-rtx.ch` öffnen und dich mit **Elix** und diesem Passwort anmelden –
+4. `https://account.da-rtx.ch` öffnen und dich mit **Elix** und diesem Passwort anmelden –
    das Admin-Konto wird beim ersten Mal angelegt. Unter «Administration» siehst du alle Konten.
 
 Die Datenbank (SQLite) entsteht automatisch. Für MySQL in `lib/config.php` `'driver' => 'mysql'` setzen.
@@ -43,13 +43,13 @@ aber noch ohne Rücksprung-Adresse – sie folgen.
 ### Ablauf für Entwickler (OAuth 2 Authorization Code mit PKCE)
 
 1. Die App erzeugt einen zufälligen `code_verifier` und leitet den Browser weiter zu
-   `https://konto.da-rtx.ch/authorize.php?response_type=code&client_id=…&redirect_uri=…&state=…&code_challenge=…&code_challenge_method=S256`
+   `https://account.da-rtx.ch/authorize.php?response_type=code&client_id=…&redirect_uri=…&state=…&code_challenge=…&code_challenge_method=S256`
    (`code_challenge` = Base64url von SHA-256 des `code_verifier`).
 2. dartx account meldet den Benutzer an und leitet zurück zu `redirect_uri?code=…&state=…`.
-3. Die App tauscht den Code ein: `POST https://konto.da-rtx.ch/token.php` mit
+3. Die App tauscht den Code ein: `POST https://account.da-rtx.ch/token.php` mit
    `grant_type=authorization_code`, `code`, `redirect_uri`, `client_id`, `code_verifier`.
    Antwort: `{ "access_token": "…", "token_type": "Bearer", "user": { "sub", "username", "display_name", "locked", … } }`
-4. Mit dem `access_token` fragt die App bei `GET https://konto.da-rtx.ch/userinfo.php`
+4. Mit dem `access_token` fragt die App bei `GET https://account.da-rtx.ch/userinfo.php`
    (Header `Authorization: Bearer …`) regelmässig nach, ob das Konto noch aktiv ist.
    `401` bedeutet: Zugriff entfernt oder Konto gelöscht; `"locked": true` bedeutet: gesperrt.
 
